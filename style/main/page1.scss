@@ -1,0 +1,180 @@
+body{
+    margin: 0 auto;
+}
+.home-section{
+    @include mx-width(1280px,100%,);
+    background-color:#28293E;
+    padding: 20px;
+
+.head-main-cont{
+    @include flex-content(flex,space-around,center);
+    .logo{
+        @include display(flex,center);
+    }
+    h3{
+        font-size: 24px;
+        color:#FFFFFF;
+        text-transform: capitalize;
+    }
+    .navbar{
+        width: 500px;
+        nav{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                a{
+                   @include fsize-color(16px,white);
+                   text-transform:capitalize;
+                   padding-left: 20px;
+                }
+            }
+        }
+    }
+    .button{
+        button{
+            @include button(170px,48px,white,none,5px,revert);
+        }
+    }
+    .burger{
+        display: none;
+    }
+}
+}
+    .home-cont{
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+    .guide-cont{
+        @include mx-width(430px,100%);
+        padding: 20px 0 0;
+        h3{
+            @include fsize-color(18px,#EF6D58);
+            text-transform: uppercase;   
+            letter-spacing: 2px;
+        }
+        .relative-title{
+            position: relative;
+            margin: 40px 0 0;
+            z-index: 1;
+            h1{
+                @include fsize-color(72px,$colowhite);
+        }
+        .absolute-star{
+            position: absolute;
+            top: -20px;
+            right: 20px;
+            z-index: -1;
+        }
+    }
+    p{
+        @extend %opacity-p;
+        padding: 35px 0 0;
+    }
+    .home-button-box{
+        display: flex;
+        padding: 35px 0 0;
+        .home-button1{
+            @include button(154px,48px,white,#EF6D58,5px,none);
+            margin-right: 25px;
+            text-transform: uppercase
+        }
+        .home-button2{
+            @include button(154px,48px,white,none,none,none);
+            text-transform: capitalize;
+        }
+    }
+}
+        .img-relative{
+            position: relative;
+            display: flex;
+            .comp-absl{
+                position: absolute;
+                top: 20px;
+                left: 20px;
+            }
+            .profile-box-part2{
+                margin-left: 30px;
+                .circle-cloud{
+                    display: flex;
+                    .circle-relt{
+                        img{
+                            width: 112px;
+                            height: 112px;
+                        }
+                        .star-absl{
+                            position: absolute;
+                            top: 30px;
+                            right: 190px;
+                            img{
+                                width: 42px;
+                                height: 56px;
+                            }
+                        }
+                    }
+                    .cloud{
+                        margin-top: 40px;
+                        margin-left: 40px;
+                    }
+                }
+            }
+        }
+        .flexx{
+            display: flex;
+            .flex{
+            .combined-shape{
+                padding: 20px 0 0;
+            }
+            .profile-box{
+                opacity: 0.9;
+                display: flex;
+                padding: 20px 0 0;
+                width: 214px;
+                height: 112px;
+                background-color: #FFFFFF;
+                margin-left: 20px;
+                border-radius: 2px;
+                img{
+                    width: 45px;
+                    height: 45px;
+                    margin-left: 20px;
+                }
+                .btn{
+                    display: flex;
+                    flex-direction: column;
+                    .btn1{
+                        @include mini-buttons(94px,14px,none,2px);
+                    }
+                    .btn2{
+                        @include mini-buttons(78px,6px,none,2px);
+                    }
+                    .btn3{
+                        @include mini-buttons(94px,6px,none,2px);
+                    }
+                    .btn4{
+                        @include mini-buttons(62px,6px,none,2px);
+                    }
+                }
+                }  
+        }
+        .yellow-bg-rlt{
+            position: relative;
+            margin-top: -140px;
+            margin-left: 40px;
+            .girl-absl{
+                position: absolute;
+                top: 2px;
+            }
+        }
+    }
+    .circle{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background-color: #32334C;
+        opacity: 0.3;
+        border-radius: 50%;
+        bottom: 40px;
+        right: 140px;
+    }
+        
+}

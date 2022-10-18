@@ -1,0 +1,65 @@
+// display property
+
+@mixin display($property,$align) {
+    align-items: $align;
+    display: ($property);
+}
+@mixin flex-content($flex,$justify,$align,){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin flex-direction($direction) {
+    flex-direction: $direction;
+}
+@mixin center($top,$left,$position,$transform) {
+    top: $top;
+    left: $left;
+    position: $position;
+    transform: $transform;
+}
+// @include flex-content(space-between,center );
+
+// @mixin positiom($property) {
+//     position: ($property);
+// }
+// @mixin position-align($position,$top,) {
+//     position: $position;
+// }
+@mixin display-1($direction,){
+    flex-direction: $direction;
+}
+//containers
+
+@mixin mx-width($max-width,$width,){
+    max-width: $max-width;
+    width: $width;
+}
+
+@mixin container($max-width,$width,$property) {
+    max-width: $max-width;
+    width: $width;
+    display: $property;
+}
+
+// 
+@mixin fsize-color($size,$color){
+    font-size:$size ;
+    color: $color;
+}
+@mixin button($width,$height,$color,$bg,$radius,$border,) {
+    width: $width;
+    height: $height;
+    color: $color;
+    background: $bg;
+    border-radius: $radius;
+    border: $border;
+}
+@mixin mini-buttons($width,$height,$border,$border-radius) {
+    width: $width;
+    height: $height;
+    border: $border;
+    border-radius: $border-radius;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}

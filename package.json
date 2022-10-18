@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zuciopath1/Project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zuciopath1/Project/issues"
+  },
+  "homepage": "https://github.com/zuciopath1/Project#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
