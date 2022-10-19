@@ -185,6 +185,10 @@ body {
   position: absolute;
   top: 30px;
   right: 190px;
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
 }
 .home-cont .img-relative .profile-box-part2 .circle-cloud .circle-relt .star-absl img {
   width: 42px;
@@ -214,6 +218,10 @@ body {
   width: 45px;
   height: 45px;
   margin-left: 20px;
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
 }
 .home-cont .flexx .flex .profile-box .btn {
   display: flex;
@@ -269,4 +277,54 @@ body {
   border-radius: 50%;
   bottom: 40px;
   right: 140px;
+}
+
+.part2 {
+  background-color: #FDF0E9;
+}
+.part2 .brand-cont {
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 0 auto;
+  height: 192px;
+  border-bottom: solid #F3D1BF;
+}
+
+.relative-part2 {
+  max-width: 566px;
+  width: 100%;
+  height: 585px;
+  position: relative;
+}
+
+@keyframes animation {
+  0% {
+    top: 2px;
+  }
+  10% {
+    top: 10px;
+  }
+}
+.img-relative:hover .comp-absl img {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.cloud img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.circle-relt img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.brand-cont a:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
