@@ -58,6 +58,7 @@
     background: $bg;
     border-radius: $radius;
     border: $border;
+    cursor: pointer;
 }
 @mixin mini-buttons($width,$height,$border,$border-radius) {
     width: $width;

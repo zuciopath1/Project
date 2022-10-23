@@ -33,10 +33,12 @@ body{
     .button{
         button{
             @include button(170px,48px,white,none,5px,revert);
+            .burger{
+                img{
+                    display: none;
+                }
+            }
         }
-    }
-    .burger{
-        display: none;
     }
 }
 }
@@ -48,16 +50,16 @@ body{
         @include mx-width(430px,100%);
         padding: 20px 0 0;
         h3{
-            @include fsize-color(18px,#EF6D58);
+            @include fsize-color(1rem,#EF6D58);
             text-transform: uppercase;   
             letter-spacing: 2px;
         }
         .relative-title{
             position: relative;
-            margin: 40px 0 0;
+            margin: 1rem 0 0;
             z-index: 1;
             h1{
-                @include fsize-color(72px,$colowhite);
+                @include fsize-color(4rem,$colowhite);
         }
         .absolute-star{
             position: absolute;
@@ -68,11 +70,11 @@ body{
     }
     p{
         @extend %opacity-p;
-        padding: 35px 0 0;
+        padding: 1rem 0 0;
     }
     .home-button-box{
         display: flex;
-        padding: 35px 0 0;
+        padding: 3rem 0 0;
         .home-button1{
             @include button(154px,48px,white,#EF6D58,5px,none);
             margin-right: 25px;
@@ -84,108 +86,80 @@ body{
         }
     }
 }
-        .img-relative{
-            position: relative;
-            display: flex;
-            .comp-absl{
-                position: absolute;
-                top: 20px;
-                left: 20px;
+         .home-part2{
+            max-width: 570px;
+            display: grid;
+            grid-auto-flow: column;
+            margin:20px 0 0;
+            .img-relative{
+                max-width: 246px;
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                .comp-absl{
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .combined-shape{
+                    max-width: 100px;
+                    margin:20px 0 20px 0;
+                    img{
+                        width: 100%;
+                    }
+                }
             }
-            .profile-box-part2{
-                margin-left: 30px;
-                .circle-cloud{
+            .anim{
+                img{
+                    width: 100%;
+                }
+                .oval-cloud{
                     display: flex;
-                    .circle-relt{
+                    margin-bottom: 50px;
+                    .oval-relt{
+                        max-width: 112px;
+                        position: relative;
+                        margin-left: 20px;
                         img{
-                            width: 112px;
-                            height: 112px;
+                            width: 100%;
                         }
-                        .star-absl{
+                        .stars-absl{
                             position: absolute;
                             top: 30px;
-                            right: 190px;
-                            @include animation-define(animation,2s,alternate-reverse,infinite);
-                            img{
-                                width: 42px;
-                                height: 56px;
-                            }
+                            left: 30px;
+                            animation-name: animation;
+                            animation-iteration-count: infinite;
+                            animation-timing-function: linear;
+                            animation-duration: 2s;
+                            animation-direction: alternate;
+                        
                         }
                     }
                     .cloud{
-                        margin-top: 40px;
-                        margin-left: 40px;
+                        margin-left: 20px;
                     }
                 }
-            }
-        }
-        .flexx{
-            display: flex;
-            .flex{
-            .combined-shape{
-                padding: 20px 0 0;
-            }
-            .profile-box{
-                opacity: 0.9;
-                display: flex;
-                padding: 20px 0 0;
-                width: 214px;
-                height: 112px;
-                background-color: #FFFFFF;
-                margin-left: 20px;
-                border-radius: 2px;
-                img{
-                    width: 45px;
-                    height: 45px;
-                    margin-left: 20px;
-                    @include animation-define(animation,2s,alternate-reverse,infinite);
+                .girl-relt{
+                    position: relative;
+                    margin: 0 0 0 50px ;
                 }
-                .btn{
-                    display: flex;
-                    flex-direction: column;
-                    .btn1{
-                        @include mini-buttons(94px,14px,none,2px);
-                    }
-                    .btn2{
-                        @include mini-buttons(78px,6px,none,2px);
-                    }
-                    .btn3{
-                        @include mini-buttons(94px,6px,none,2px);
-                    }
-                    .btn4{
-                        @include mini-buttons(62px,6px,none,2px);
-                    }
+                .girl-abslt{
+                    position: absolute;
+                    top: 1px;
                 }
-                }  
-        }
-        .yellow-bg-rlt{
-            position: relative;
-            margin-top: -140px;
-            margin-left: 40px;
-            .girl-absl{
-                position: absolute;
-                top: 2px;
             }
-        }
-    }
-    .circle{
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        background-color: #32334C;
-        opacity: 0.3;
-        border-radius: 50%;
-        bottom: 40px;
-        right: 140px;
-    }
-        
+         }
 }
 .part2{
     background-color:$bg-part2;
 .brand-cont{
     @include mx-width(1170px,100%);
-    @include flex-content(flex,space-between,center);
-    padding:20px;
+    @include flex-content(flex,space-around,center);
+    flex-wrap: wrap;
     margin: 0 auto;
     height: 192px;
     border-bottom: solid #F3D1BF;

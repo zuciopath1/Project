@@ -100,8 +100,9 @@ body {
   background: none;
   border-radius: 5px;
   border: revert;
+  cursor: pointer;
 }
-.home-section .head-main-cont .burger {
+.home-section .head-main-cont .button button .burger img {
   display: none;
 }
 
@@ -116,18 +117,18 @@ body {
   padding: 20px 0 0;
 }
 .home-cont .guide-cont h3 {
-  font-size: 18px;
+  font-size: 1rem;
   color: #EF6D58;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 .home-cont .guide-cont .relative-title {
   position: relative;
-  margin: 40px 0 0;
+  margin: 1rem 0 0;
   z-index: 1;
 }
 .home-cont .guide-cont .relative-title h1 {
-  font-size: 72px;
+  font-size: 4rem;
   color: white;
 }
 .home-cont .guide-cont .relative-title .absolute-star {
@@ -137,11 +138,11 @@ body {
   z-index: -1;
 }
 .home-cont .guide-cont p {
-  padding: 35px 0 0;
+  padding: 1rem 0 0;
 }
 .home-cont .guide-cont .home-button-box {
   display: flex;
-  padding: 35px 0 0;
+  padding: 3rem 0 0;
 }
 .home-cont .guide-cont .home-button-box .home-button1 {
   width: 154px;
@@ -150,6 +151,7 @@ body {
   background: #EF6D58;
   border-radius: 5px;
   border: none;
+  cursor: pointer;
   margin-right: 25px;
   text-transform: uppercase;
 }
@@ -160,123 +162,72 @@ body {
   background: none;
   border-radius: none;
   border: none;
+  cursor: pointer;
   text-transform: capitalize;
 }
-.home-cont .img-relative {
-  position: relative;
-  display: flex;
+.home-cont .home-part2 {
+  max-width: 570px;
+  display: grid;
+  grid-auto-flow: column;
+  margin: 20px 0 0;
 }
-.home-cont .img-relative .comp-absl {
+.home-cont .home-part2 .img-relative {
+  max-width: 246px;
+  position: relative;
+}
+.home-cont .home-part2 .img-relative img {
+  width: 100%;
+}
+.home-cont .home-part2 .img-relative .comp-absl {
   position: absolute;
   top: 20px;
   left: 20px;
 }
-.home-cont .img-relative .profile-box-part2 {
-  margin-left: 30px;
+.home-cont .home-part2 .img-relative .comp-absl img {
+  width: 100%;
 }
-.home-cont .img-relative .profile-box-part2 .circle-cloud {
+.home-cont .home-part2 .img-relative .combined-shape {
+  max-width: 100px;
+  margin: 20px 0 20px 0;
+}
+.home-cont .home-part2 .img-relative .combined-shape img {
+  width: 100%;
+}
+.home-cont .home-part2 .anim img {
+  width: 100%;
+}
+.home-cont .home-part2 .anim .oval-cloud {
   display: flex;
+  margin-bottom: 50px;
 }
-.home-cont .img-relative .profile-box-part2 .circle-cloud .circle-relt img {
-  width: 112px;
-  height: 112px;
+.home-cont .home-part2 .anim .oval-cloud .oval-relt {
+  max-width: 112px;
+  position: relative;
+  margin-left: 20px;
 }
-.home-cont .img-relative .profile-box-part2 .circle-cloud .circle-relt .star-absl {
+.home-cont .home-part2 .anim .oval-cloud .oval-relt img {
+  width: 100%;
+}
+.home-cont .home-part2 .anim .oval-cloud .oval-relt .stars-absl {
   position: absolute;
   top: 30px;
-  right: 190px;
+  left: 30px;
   animation-name: animation;
-  animation-duration: 2s;
-  animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
-}
-.home-cont .img-relative .profile-box-part2 .circle-cloud .circle-relt .star-absl img {
-  width: 42px;
-  height: 56px;
-}
-.home-cont .img-relative .profile-box-part2 .circle-cloud .cloud {
-  margin-top: 40px;
-  margin-left: 40px;
-}
-.home-cont .flexx {
-  display: flex;
-}
-.home-cont .flexx .flex .combined-shape {
-  padding: 20px 0 0;
-}
-.home-cont .flexx .flex .profile-box {
-  opacity: 0.9;
-  display: flex;
-  padding: 20px 0 0;
-  width: 214px;
-  height: 112px;
-  background-color: #FFFFFF;
-  margin-left: 20px;
-  border-radius: 2px;
-}
-.home-cont .flexx .flex .profile-box img {
-  width: 45px;
-  height: 45px;
-  margin-left: 20px;
-  animation-name: animation;
+  animation-timing-function: linear;
   animation-duration: 2s;
-  animation-direction: alternate-reverse;
-  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
-.home-cont .flexx .flex .profile-box .btn {
-  display: flex;
-  flex-direction: column;
+.home-cont .home-part2 .anim .oval-cloud .cloud {
+  margin-left: 20px;
 }
-.home-cont .flexx .flex .profile-box .btn .btn1 {
-  width: 94px;
-  height: 14px;
-  border: none;
-  border-radius: 2px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-.home-cont .flexx .flex .profile-box .btn .btn2 {
-  width: 78px;
-  height: 6px;
-  border: none;
-  border-radius: 2px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-.home-cont .flexx .flex .profile-box .btn .btn3 {
-  width: 94px;
-  height: 6px;
-  border: none;
-  border-radius: 2px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-.home-cont .flexx .flex .profile-box .btn .btn4 {
-  width: 62px;
-  height: 6px;
-  border: none;
-  border-radius: 2px;
-  margin-bottom: 10px;
-  margin-left: 10px;
-}
-.home-cont .flexx .yellow-bg-rlt {
+.home-cont .home-part2 .anim .girl-relt {
   position: relative;
-  margin-top: -140px;
-  margin-left: 40px;
+  margin: 0 0 0 50px;
 }
-.home-cont .flexx .yellow-bg-rlt .girl-absl {
+.home-cont .home-part2 .anim .girl-abslt {
   position: absolute;
-  top: 2px;
-}
-.home-cont .circle {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  background-color: #32334C;
-  opacity: 0.3;
-  border-radius: 50%;
-  bottom: 40px;
-  right: 140px;
+  top: 1px;
 }
 
 .part2 {
@@ -286,9 +237,9 @@ body {
   max-width: 1170px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 20px;
+  flex-wrap: wrap;
   margin: 0 auto;
   height: 192px;
   border-bottom: solid #F3D1BF;
@@ -301,6 +252,31 @@ body {
   position: relative;
 }
 
+@media (max-width: 700px) {
+  .head-main-cont {
+    justify-content: space-between;
+  }
+  .navbar {
+    display: none;
+  }
+  .button {
+    display: none;
+  }
+  .button .burger {
+    display: block;
+  }
+}
+@media (max-width: 700px) {
+  .home-cont {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .guide-cont {
+    max-width: 550px;
+  }
+}
 @keyframes animation {
   0% {
     top: 2px;
@@ -327,4 +303,12 @@ body {
 .brand-cont a:hover {
   transform: scale(1.1);
   cursor: pointer;
+}
+
+.navbar a:hover {
+  transform: scale(1.1);
+}
+
+.girl-abslt img:hover {
+  transform: scale(1.1);
 }
