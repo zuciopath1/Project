@@ -1,6 +1,5 @@
 @import './variable.scss';
 @import './mixins.scss';
-
 // %title{
 //     font-size:$size030;
 // }
@@ -28,3 +27,66 @@
     color: #FFF;
     line-height: 20px;
 }
+%h3{
+    font-size: 1rem;
+    color: #EF6D58;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+%p{
+    font-size: 20px;
+    color: black;
+    // opacity: 0.7;
+    line-height: initial;
+    max-width: 470px;
+    margin-top: 20px;
+    line-height: 1;
+}
+%boxx{
+    padding: 50px;
+    border: 1px solid #F3D1BF;
+    cursor: pointer;
+}
+%h2{
+    @include fsize-color(4rem,black);
+    text-transform:capitalize;
+    max-width: 407px;
+    margin: 20px 0 0;
+}
+%h4{
+    font-size: 20px;
+    color: #391400;
+    margin: 30px 0 0
+}
+// checkmark
+// before
+%before{
+    content: " "; 
+    display: block;
+    border: solid 0.8em #EF6C57;
+    content: " "; 
+    display: block;
+    border: solid 0.8em #EF6C57;
+    border-radius: .8em; 
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: 0.5em;
+    top: 40%; 
+    margin-top: -0.5em;
+}
+%after{
+    content: " ";
+    display: block;
+    width: 0.3em; 
+    height: 0.6em;
+    border: solid white;
+    border-width: 0 0.2em 0.2em 0;
+    position: absolute;
+    left: 1em;
+    top: 40%;
+    margin-top: -0.2em;
+    transform: rotate(45deg);
+}
+// ..............
+

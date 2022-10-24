@@ -1,6 +1,4 @@
-// @media(max-width:700px){
-   
-// }
+@import'./../moduls/clases.scss';
 
 @media(max-width:700px){
     .head-main-cont{
@@ -24,5 +22,51 @@
 @media screen and (max-width:700px){
     .guide-cont{
         max-width: 550px ;
+    }
+}
+@media screen and (max-width:980px){
+    .grid-title h2{
+        font-size: 3rem !important;
+    }
+    .grid4 img{
+        width: 85% !important;
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width:833px){
+    .grid-title h2{
+        font-size:2rem !important;
+    }
+}
+@media screen and (max-width:700px){
+    .gridd{
+        justify-content: center !important;
+        flex-wrap: wrap;
+        align-items: center !important;
+    }
+    .grid-title h2{
+        font-size: 4rem !important;
+    }
+    .experience{
+        grid-auto-flow: inherit !important;
+    }
+    .feautres{
+        justify-content: center !important;
+        flex-wrap: wrap;
+        .feautres-title{
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    .video-reel{
+        justify-content: center !important;
+        flex-wrap: wrap;
+        .video-title{
+            margin-top: 40px;
+        }
+    }
+    .readme-title{
+        justify-content: center !important;
+        flex-wrap: wrap;
     }
 }

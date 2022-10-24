@@ -50,9 +50,7 @@ body{
         @include mx-width(430px,100%);
         padding: 20px 0 0;
         h3{
-            @include fsize-color(1rem,#EF6D58);
-            text-transform: uppercase;   
-            letter-spacing: 2px;
+            @extend %h3
         }
         .relative-title{
             position: relative;
@@ -60,6 +58,7 @@ body{
             z-index: 1;
             h1{
                 @include fsize-color(4rem,$colowhite);
+                text-transform: capitalize;
         }
         .absolute-star{
             position: absolute;
@@ -156,6 +155,9 @@ body{
 }
 .part2{
     background-color:$bg-part2;
+    max-width: 1280px;
+    width: 100%;
+    padding: 20px;
 .brand-cont{
     @include mx-width(1170px,100%);
     @include flex-content(flex,space-around,center);
@@ -164,9 +166,259 @@ body{
     height: 192px;
     border-bottom: solid #F3D1BF;
     }
+    .gridd{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    .grid-overlap{
+        @include mx-width(566px,100%);
+        margin:30px 0 0;
+        display: grid;
+        grid-template-columns: repeat(6);
+        grid-template-rows: repeat(6);
+        .grid1{
+            grid-row: 1/3;
+            grid-column: 1/2;
+            place-self: center;
+            img{
+                width: 100%;
+            }
+        }
+        .grid2{
+            grid-column: 2/2;
+            grid-row: 1/3;
+            img{
+                width: 100%;
+            }
+        }
+        .grid3{
+            img{
+                width: 100%;
+            }
+        }
+        .grid4{
+            grid-column: 1/4;
+            grid-row: 2/4;
+            place-self: center;
+            margin: 20px 0 0;
+            img{
+                width:100%;
+            }
+        }
+        .grid5{
+            grid-column: 1/2;
+            grid-row: 3/5;
+            img{
+                width: 100%;
+            }
+        }
+        .grid6{
+            max-width: 384px;
+            width: 100%;
+            background-color: #F9E5DA;
+        }
+    }
+    .grid-title{
+        margin: 150px 0 0;
+        h3{
+            @extend %h3;
+        }
+        h2{
+           @extend %h2;
+        }
+        h4{
+           @extend %h4;
+        }
+        p{
+            @extend %p;
+        }
+        button{
+            @include button(138px,48px,#391400,#FFFFFF,5px,none);
+            text-transform: uppercase;
+        }
+    }
+    }
+    .experience{
+        display: grid;
+        grid-auto-flow: column;
+        max-width: 1140px;
+        margin: 30px 0 0;
+        span{
+            font-size: 2rem;
+        }
+        p{
+            font-size: 20px;
+            margin-top: 10px;
+        }
+        .years{
+            @extend %boxx;
+        }
+        .members{
+            @extend %boxx;
+        }
+        .projects{
+            @extend %boxx;
+        }
+    }
+    .readme-title{
+        @include container(1140px,100%,flex);
+        justify-content: space-between;
+        margin-top: 50px;
+        padding: 25px;
+        border-bottom: solid #F3D1BF;
+    .titles{
+        h4{
+            @extend %h4;
+        }
+        h3{
+            @extend %h3;
+        }
+        h2{
+            @extend %h2;
+        }
+        p{
+            @extend %p;
+        }
+        button{
+            @include button(138px,48px,#391400,#FFFFFF,5px,none);
+        }
+    }
+    .titles2{
+           @include flex-content(flex,center,center);
+           flex-direction: column;
+           .numbers{
+            p{
+                @extend %p;
+               }
+            span{
+                font-size: 3rem;
+                margin: 0 30px 0 0;
+            }
+           }
+    }
 }
-.relative-part2{
-    @include mx-wd-ht(566px,100%,585px);
-    position: relative;
-    
+}
+.part2{
+.video-reel{
+    @include flex-content(flex,space-between,center);
+    video{
+        max-width: 470px;
+        width: 100%;
+    }
+    .video-title{
+        h3{
+            @extend %h3;
+        }
+        h2{
+            @extend %h2;
+        }
+        p{
+            @extend %p;
+        }
+    }
+}
+.feautres{
+    @include flex-content(flex,space-between,center);
+    margin: 30px 0 0;
+    max-width: 1140px;
+    .feautres-title{
+        h3{
+            @extend %h3;
+        }
+        h2{
+            @extend %h2;
+        }
+        p{
+            @extend %p;
+        }
+        .checkmark{
+            margin: 20px 0 0;
+            li{
+                font-size: 16px;
+                margin-bottom: 1em;
+                padding: 0.25em 0 0 2.5em;
+                position: relative;
+            }
+            li:before{
+                @extend %before;
+            }
+            li:after{
+              @extend %after;
+            }
+        }
+    }
+    .grid-position{
+        max-width:528px;
+        width: 100%;
+        height: 550px;
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        img{
+            width: 100%;
+        }
+        .office{
+            grid-column: 1/4;
+            grid-row: 1/4;
+            place-self: center;
+            z-index: 1;
+            max-width: 470px;
+        }
+        .lavander{
+            grid-row: 1/2;
+            grid-column: 1/2;
+            place-self: center;
+            z-index: 2;
+        }
+        .rectangle{
+            grid-column: 1/5;
+            grid-row: 3/1;
+        }
+        .rectangle2{
+            grid-column: 3/3;
+            grid-row: 3/3;
+        }
+        .cloudd{
+            grid-column: 1/2;
+            grid-row: 3/3;
+            place-self: center;
+        }
+        .combined-arrow{
+            grid-column: 4/3;
+            grid-row: 1/2;
+            place-self: center;
+        }
+    }
+}
+.feautres2{
+    @include flex-content(flex,space-around,center);
+    .feautres2-title{
+        h3{
+            @extend %h3;
+        }
+        p{
+            @extend %p;
+        }
+        button{
+            border: none;
+            cursor: pointer;
+            background: none;
+            margin:20px 0 0;
+        }
+    }
+    .feautres2-boxes{
+        display: flex;
+        .feautres2-box1{
+            max-width:336px;
+            width: 100%;
+            background-color: #FFFFFF;
+            h4{
+                @extend %h4;
+            }
+            p{
+                @extend %p;
+                opacity: 0.7;
+            }
+        }
+    }
+}
 }
