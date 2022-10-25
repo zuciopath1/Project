@@ -53,6 +53,11 @@
     max-width: 407px;
     margin: 20px 0 0;
 }
+%h22{
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 20px 0 0;
+}
 %h4{
     font-size: 20px;
     color: #391400;
@@ -89,4 +94,7 @@
     transform: rotate(45deg);
 }
 // ..............
-
+%containerr{
+    margin: 30px 0 0;
+    max-width: 1240px;
+}

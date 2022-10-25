@@ -9,8 +9,10 @@
     justify-content: $justify;
     align-items: $align;
 }
-@mixin flex-direction($direction) {
+@mixin direction($direction,$justify) {
     flex-direction: $direction;
+    justify-content: $justify;
+    display: flex;
 }
 @mixin center($top,$left,$position,$transform) {
     top: $top;
@@ -68,10 +70,18 @@
     border-radius: $border-radius;
     margin-bottom: 10px;
     margin-left: 10px;
+    cursor: pointer;
 }
 @mixin animation-define($name,$duration,$direction,$interaction-count){
     animation-name: $name;
     animation-duration: $duration;
     animation-direction: $direction;
     animation-iteration-count: $interaction-count;
+}
+@mixin hh2($width){
+    max-width: $width;
+    font-size: 4rem;
+    color: black;
+    text-transform: capitalize;
+    margin: 20px 0 0;
 }
