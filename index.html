@@ -234,6 +234,119 @@
                 </div>
         </div>
         <!--  -->
+        <div class="containar">
+        <div class="service-title">
+            <h3><a class="service" href="#">service</a></h3>
+            <h2><a class="agency" href="#">how our agency can help</a></h2>
+        </div>
+        <div class="agency-help">
+            <div class="agency-box">
+                <div class="icon-box">
+                    <img src="./img/design-icon.png" alt="icon">
+                </div>
+                <h2><a href="#">design</a></h2>
+                <p><a href="#">Agency provides a full service range including technical skills, design.</a></p>
+                <p><a href="#">learn more</a></p>
+            </div>
+            <!--  -->
+            <div class="agency-box">
+                <div class="icon-box">
+                    <img src="./img/dev-icon.png" alt="icon">
+                </div>
+                <h2><a href="#">development</a></h2>
+                <p><a href="#">Full service range including technical skills, design, business.</a></p>
+                <p><a href="#">discover more</a></p>
+            </div>
+            <!--  -->
+            <div class="agency-box">
+                <div class="icon-box">
+                    <img src="./img/marketing-icon.png" alt="icon">
+                </div>
+                <h2><a href="#">marketing</a></h2>
+                <p><a href="#">Technical skills, design, business understanding, ability.</a></p>
+                <p><a href="#">explore now</a></p>
+            </div>
+        </div>
+    </div>
     </section>
+    <!--  -->
+    <section class="portfolio-section">
+        <div class="portfolio-box">
+            <h3><a class="portfolio" href="#">portfolio</a></h3>
+            <h2><a class="title" href="#">latest work</a></h2>
+            <!-- drop down -->
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">show all</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">design</a>
+                  <a href="#">branding</a>
+                  <a href="#">ilustration</a>
+                  <a href="#">motion</a>
+                </div>
+              </div>             
+            <!--  -->
+            <div class="portfolio-box2">
+                <h4><a href="#">show all</a></h4>
+                <h4><a href="#">design</a></h4>
+                <h4><a href="#">branding</a></h4>
+                <h4><a href="#">ilustration</a></h4>
+                <h4><a class="motion" href="#">motion</a></h4>
+            </div>
+        </div>
+        <div class="parenttt">
+            <div class="div1">
+                <img src="./img/keyboard.png" alt="image">
+                <div class="ilustration-absolute">
+                    <button>branded</button>
+                    <h4>keyboard</h4>
+                </div>
+            </div>
+            <div class="div2"> 
+                <img src="./img/sofa.png" alt="sofa">
+                <div class="ilustration-absolute">
+                    <button>ilustration</button>
+                    <h4>sofa</h4>
+                </div>
+            </div>
+            <div class="div3">
+                <img src="./img/workmedia.png" alt="image">
+                <div class="ilustration-absolute">
+                    <button>ilustration</button>
+                    <h4>work media</h4>
+                </div>
+             </div>
+            <div class="div4"> 
+                <img src="./img/ddone.png" alt="image">
+                <div class="ilustration-absolute">
+                    <button>motion</button>
+                    <h4>dddone</h4>
+                </div>
+            </div>
+            </div>
+            <div class="explore-button">
+                <button>explore more</button>
+            </div>
+    </section>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+        
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
 </body>
 </html>

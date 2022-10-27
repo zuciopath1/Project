@@ -3,11 +3,11 @@
 // %title{
 //     font-size:$size030;
 // }
-// %container{
-//     max-width: 1170px;
-//     width: 100%;
-//     margin: 0 auto;
-// }
+%container{
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+}
 // %datelogo{
 //     background-color: $colo003 ;
 //     width:$width005;
@@ -97,4 +97,15 @@
 %containerr{
     margin: 30px 0 0;
     max-width: 1240px;
+}
+%pp{
+    font-size: 16px;
+    opacity: 0.7;
+    text-transform: capitalize;
+    color: #FFF;
+}
+%ilustration{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }

@@ -49,6 +49,12 @@ input {
   text-decoration: none;
 }
 
+.part2 .containar {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .home-cont .guide-cont p {
   opacity: 0.7;
   font-size: 16px;
@@ -56,14 +62,14 @@ input {
   line-height: 20px;
 }
 
-.part2 .service-box h3, .part2 .feautres2 .feautres2-title h3, .part2 .feautres .feautres-title h3, .part2 .video-reel .video-title h3, .part2 .readme-title .titles h3, .part2 .gridd .grid-title h3, .home-cont .guide-cont h3 {
+.portfolio-section .portfolio-box .portfolio, .part2 .containar .service-title .service, .part2 .service-box h3, .part2 .feautres2 .feautres2-title h3, .part2 .feautres .feautres-title h3, .part2 .video-reel .video-title h3, .part2 .readme-title .titles h3, .part2 .gridd .grid-title h3, .home-cont .guide-cont h3 {
   font-size: 1rem;
   color: #EF6D58;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.part2 .service-box p, .part2 .feautres2 .feautres2-boxes .feautres2-box1 p, .part2 .feautres .feautres-title p, .part2 .video-reel .video-title p, .part2 .readme-title .titles2 .numbers p, .part2 .readme-title .titles p, .part2 .gridd .grid-title p {
+.part2 .containar .agency-help .agency-box p, .part2 .service-box p, .part2 .feautres2 .feautres2-boxes .feautres2-box1 p, .part2 .feautres .feautres-title p, .part2 .video-reel .video-title p, .part2 .readme-title .titles2 .numbers p, .part2 .readme-title .titles p, .part2 .gridd .grid-title p {
   font-size: 20px;
   color: black;
   line-height: initial;
@@ -86,7 +92,7 @@ input {
   margin: 20px 0 0;
 }
 
-.part2 .feautres2 .feautres2-boxes .feautres2-box2 h2, .part2 .feautres2 .feautres2-boxes .feautres2-box1 h2 {
+.part2 .containar .agency-help .agency-box h2, .part2 .feautres2 .feautres2-boxes .feautres2-box2 h2, .part2 .feautres2 .feautres2-boxes .feautres2-box1 h2 {
   font-size: 24px;
   text-transform: capitalize;
   margin: 20px 0 0;
@@ -131,6 +137,19 @@ input {
 .part2 .containerr {
   margin: 30px 0 0;
   max-width: 1240px;
+}
+
+.portfolio-section .portfolio-box .portfolio-box2 a {
+  font-size: 16px;
+  opacity: 0.7;
+  text-transform: capitalize;
+  color: #FFF;
+}
+
+.portfolio-section .parenttt .div4 .ilustration-absolute, .portfolio-section .parenttt .div3 .ilustration-absolute, .portfolio-section .parenttt .div2 .ilustration-absolute, .portfolio-section .parenttt .div1 .ilustration-absolute {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 
 body {
@@ -424,6 +443,9 @@ body {
   align-items: center;
   flex-direction: column;
 }
+.part2 .readme-title .titles2 .numbers p {
+  text-transform: capitalize;
+}
 .part2 .readme-title .titles2 .numbers span {
   font-size: 3rem;
   margin: 0 30px 0 0;
@@ -516,7 +538,7 @@ body {
   display: flex;
 }
 .part2 .feautres2 .feautres2-boxes .feautres2-box1 {
-  max-width: 336px;
+  max-width: 390px;
   width: 100%;
   height: 336px;
   background-color: #FFFFFF;
@@ -633,6 +655,256 @@ body {
   margin: 20px 0 0;
   text-transform: uppercase;
 }
+.part2 .containar .service-title {
+  margin: 30px 0 0;
+}
+.part2 .containar .service-title h2 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  max-width: 452px;
+  margin: 20px 0 0;
+}
+.part2 .containar .service-title .agency {
+  color: black;
+}
+.part2 .containar .agency-help {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 0;
+}
+.part2 .containar .agency-help .agency-box {
+  max-width: 390px;
+  width: 100%;
+  height: 336px;
+  background-color: none;
+  padding: 40px;
+  border: solid #F3D1BF;
+}
+.part2 .containar .agency-help .agency-box a {
+  color: black;
+}
+.part2 .containar .agency-help .agency-box .icon-box {
+  background-color: #EF6D58;
+  max-width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  padding: 25px;
+}
+.part2 .containar .agency-help .agency-box p {
+  opacity: 0.7;
+  text-transform: capitalize;
+}
+
+.portfolio-section {
+  max-width: 1280px;
+  width: 100%;
+  background-color: #28293E;
+  padding: 20px;
+}
+.portfolio-section .portfolio-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px 70px;
+}
+.portfolio-section .portfolio-box .title {
+  font-size: 4rem;
+  text-transform: capitalize;
+  max-width: 100px;
+  color: white;
+  margin: 20px 0 0;
+}
+.portfolio-section .portfolio-box h2 {
+  margin: 20px 0 0;
+}
+.portfolio-section .portfolio-box .portfolio-box2 {
+  display: flex;
+  margin: 20px 0 0;
+}
+.portfolio-section .portfolio-box .portfolio-box2 a {
+  margin-left: 60px;
+}
+.portfolio-section .portfolio-box .portfolio-box2 .motion {
+  margin-right: 60px;
+}
+.portfolio-section .parenttt {
+  max-width: 1140px;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  margin: 0 auto;
+}
+.portfolio-section .parenttt button {
+  text-transform: capitalize;
+}
+.portfolio-section .parenttt .div1 {
+  grid-area: 1/2/2/4;
+  max-width: 670px;
+  position: relative;
+}
+.portfolio-section .parenttt .div1 img {
+  width: 100%;
+}
+.portfolio-section .parenttt .div1 button {
+  width: 84px;
+  height: 38px;
+  border: none;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.portfolio-section .parenttt .div1 h4 {
+  color: white;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.portfolio-section .parenttt .div2 {
+  grid-area: 1/1/2/2;
+  max-width: 470px;
+  max-height: 416px;
+  position: relative;
+}
+.portfolio-section .parenttt .div2 .ilustration-absolute button {
+  width: 84px;
+  height: 38px;
+  border: none;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.portfolio-section .parenttt .div2 .ilustration-absolute h4 {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.portfolio-section .parenttt .div2 img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-section .parenttt .div3 {
+  grid-area: 2/1/3/3;
+  max-width: 670px;
+  position: relative;
+}
+.portfolio-section .parenttt .div3 img {
+  width: 100%;
+}
+.portfolio-section .parenttt .div3 .ilustration-absolute button {
+  width: 84px;
+  height: 38px;
+  border: none;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.portfolio-section .parenttt .div3 .ilustration-absolute h4 {
+  color: white;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.portfolio-section .parenttt .div4 {
+  grid-area: 2/3/3/4;
+  max-width: 470px;
+  max-height: 416px;
+  position: relative;
+}
+.portfolio-section .parenttt .div4 img {
+  width: 100%;
+  height: 100%;
+}
+.portfolio-section .parenttt .div4 .ilustration-absolute button {
+  width: 84px;
+  height: 38px;
+  border: none;
+  border-radius: 18px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.portfolio-section .parenttt .div4 .ilustration-absolute h4 {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.portfolio-section .explore-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio-section .explore-button button {
+  width: 170px;
+  height: 48px;
+  color: white;
+  background: none;
+  border-radius: 5px;
+  border: solid;
+  cursor: pointer;
+  margin: 20px 0 0;
+}
+
+.dropbtn {
+  background-color: #FFFFFF;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  width: 329px;
+  text-transform: capitalize;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #FFFFFF;
+}
+
+.dropdown {
+  position: relative;
+  display: none;
+  margin: 20px 0 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 329px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  text-transform: uppercase;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .dropdown {
+    display: block;
+  }
+  .portfolio-box2 {
+    display: none !important;
+  }
+}
+.part2 .containar {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
 
 .home-cont .guide-cont p {
   opacity: 0.7;
@@ -641,14 +913,14 @@ body {
   line-height: 20px;
 }
 
-.home-cont .guide-cont h3, .part2 .gridd .grid-title h3, .part2 .readme-title .titles h3, .part2 .video-reel .video-title h3, .part2 .feautres .feautres-title h3, .part2 .feautres2 .feautres2-title h3, .part2 .service-box h3 {
+.home-cont .guide-cont h3, .part2 .gridd .grid-title h3, .part2 .readme-title .titles h3, .part2 .video-reel .video-title h3, .part2 .feautres .feautres-title h3, .part2 .feautres2 .feautres2-title h3, .part2 .service-box h3, .part2 .containar .service-title .service, .portfolio-section .portfolio-box .portfolio {
   font-size: 1rem;
   color: #EF6D58;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
-.part2 .gridd .grid-title p, .part2 .readme-title .titles p, .part2 .readme-title .titles2 .numbers p, .part2 .video-reel .video-title p, .part2 .feautres .feautres-title p, .part2 .feautres2 .feautres2-boxes .feautres2-box1 p, .part2 .service-box p {
+.part2 .gridd .grid-title p, .part2 .readme-title .titles p, .part2 .readme-title .titles2 .numbers p, .part2 .video-reel .video-title p, .part2 .feautres .feautres-title p, .part2 .feautres2 .feautres2-boxes .feautres2-box1 p, .part2 .service-box p, .part2 .containar .agency-help .agency-box p {
   font-size: 20px;
   color: black;
   line-height: initial;
@@ -671,7 +943,7 @@ body {
   margin: 20px 0 0;
 }
 
-.part2 .feautres2 .feautres2-boxes .feautres2-box1 h2, .part2 .feautres2 .feautres2-boxes .feautres2-box2 h2 {
+.part2 .feautres2 .feautres2-boxes .feautres2-box1 h2, .part2 .feautres2 .feautres2-boxes .feautres2-box2 h2, .part2 .containar .agency-help .agency-box h2 {
   font-size: 24px;
   text-transform: capitalize;
   margin: 20px 0 0;
@@ -718,6 +990,19 @@ body {
   max-width: 1240px;
 }
 
+.portfolio-section .portfolio-box .portfolio-box2 a {
+  font-size: 16px;
+  opacity: 0.7;
+  text-transform: capitalize;
+  color: #FFF;
+}
+
+.portfolio-section .parenttt .div1 .ilustration-absolute, .portfolio-section .parenttt .div2 .ilustration-absolute, .portfolio-section .parenttt .div3 .ilustration-absolute, .portfolio-section .parenttt .div4 .ilustration-absolute {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
 @media (max-width: 700px) {
   .head-main-cont {
     justify-content: space-between !important;
@@ -730,6 +1015,11 @@ body {
   }
   .burger img {
     display: block !important;
+  }
+  .parenttt {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media (max-width: 700px) {
@@ -798,6 +1088,9 @@ body {
     justify-content: center !important;
     flex-wrap: wrap;
   }
+  .agency-help {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 1000px) {
   .service-box h2 {
@@ -822,6 +1115,9 @@ body {
 @media (max-width: 550px) {
   .grid-content {
     height: 560px !important;
+  }
+  .portfolio-box h2 a {
+    font-size: 2rem !important;
   }
 }
 @media (max-width: 450px) {
