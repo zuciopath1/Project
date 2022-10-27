@@ -14,6 +14,11 @@
     justify-content: $justify;
     display: flex;
 }
+@mixin direction-align($direction,$align) {
+    flex-direction: $direction;
+    align-items: $align;
+    display: flex;
+}
 @mixin center($top,$left,$position,$transform) {
     top: $top;
     left: $left;
@@ -24,10 +29,7 @@
 
 // @mixin positiom($property) {
 //     position: ($property);
-// }
-// @mixin position-align($position,$top,) {
-//     position: $position;
-// }
+// 
 @mixin display-1($direction,){
     flex-direction: $direction;
 }

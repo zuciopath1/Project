@@ -49,7 +49,7 @@ input {
   text-decoration: none;
 }
 
-.part2 .containar {
+.portfolio-section .container, .part2 .containar {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
@@ -62,7 +62,7 @@ input {
   line-height: 20px;
 }
 
-.portfolio-section .portfolio-box .portfolio, .part2 .containar .service-title .service, .part2 .service-box h3, .part2 .feautres2 .feautres2-title h3, .part2 .feautres .feautres-title h3, .part2 .video-reel .video-title h3, .part2 .readme-title .titles h3, .part2 .gridd .grid-title h3, .home-cont .guide-cont h3 {
+.portfolio-section .team h3, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .portfolio-box .portfolio, .part2 .containar .service-title .service, .part2 .service-box h3, .part2 .feautres2 .feautres2-title h3, .part2 .feautres .feautres-title h3, .part2 .video-reel .video-title h3, .part2 .readme-title .titles h3, .part2 .gridd .grid-title h3, .home-cont .guide-cont h3 {
   font-size: 1rem;
   color: #EF6D58;
   text-transform: uppercase;
@@ -92,7 +92,7 @@ input {
   margin: 20px 0 0;
 }
 
-.part2 .containar .agency-help .agency-box h2, .part2 .feautres2 .feautres2-boxes .feautres2-box2 h2, .part2 .feautres2 .feautres2-boxes .feautres2-box1 h2 {
+.portfolio-section .container .inner .get-started h2, .part2 .containar .agency-help .agency-box h2, .part2 .feautres2 .feautres2-boxes .feautres2-box2 h2, .part2 .feautres2 .feautres2-boxes .feautres2-box1 h2 {
   font-size: 24px;
   text-transform: capitalize;
   margin: 20px 0 0;
@@ -843,6 +843,67 @@ body {
   border: solid;
   cursor: pointer;
   margin: 20px 0 0;
+  margin-bottom: 150px;
+}
+.portfolio-section .container {
+  height: 336px;
+  background-color: #FDF0E9;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.portfolio-section .container .star-absolute {
+  position: absolute;
+  top: -75px;
+  left: 30px;
+}
+.portfolio-section .container .women-absolute {
+  position: absolute;
+  right: 30px;
+  top: -60px;
+  width: 239px;
+}
+.portfolio-section .container .women-absolute img {
+  width: 100%;
+}
+.portfolio-section .container .inner {
+  display: flex;
+  align-items: center;
+}
+.portfolio-section .container .inner .get-started {
+  margin-left: 45px;
+}
+.portfolio-section .container .inner .get-started h2 {
+  max-width: 226px;
+}
+.portfolio-section .container .inner .get-started button {
+  width: 154px;
+  height: 48px;
+  color: white;
+  background: #EF6D58;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0 0;
+  margin-right: 25px;
+  text-transform: uppercase;
+}
+.portfolio-section .container .inner .block {
+  max-width: 430px;
+}
+.portfolio-section .container .inner .block img {
+  width: 100%;
+}
+.portfolio-section .team {
+  margin: 30px 0 0;
+}
+.portfolio-section .team h2 {
+  font-size: 4rem;
+  text-transform: capitalize;
+  max-width: 510px;
+  color: white;
+  margin: 20px 0 0;
+  margin-bottom: 20px;
 }
 
 .dropbtn {
@@ -900,7 +961,7 @@ body {
     display: none !important;
   }
 }
-.part2 .containar {
+.part2 .containar, .portfolio-section .container {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
@@ -913,7 +974,7 @@ body {
   line-height: 20px;
 }
 
-.home-cont .guide-cont h3, .part2 .gridd .grid-title h3, .part2 .readme-title .titles h3, .part2 .video-reel .video-title h3, .part2 .feautres .feautres-title h3, .part2 .feautres2 .feautres2-title h3, .part2 .service-box h3, .part2 .containar .service-title .service, .portfolio-section .portfolio-box .portfolio {
+.home-cont .guide-cont h3, .part2 .gridd .grid-title h3, .part2 .readme-title .titles h3, .part2 .video-reel .video-title h3, .part2 .feautres .feautres-title h3, .part2 .feautres2 .feautres2-title h3, .part2 .service-box h3, .part2 .containar .service-title .service, .portfolio-section .portfolio-box .portfolio, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .team h3 {
   font-size: 1rem;
   color: #EF6D58;
   text-transform: uppercase;
@@ -943,7 +1004,7 @@ body {
   margin: 20px 0 0;
 }
 
-.part2 .feautres2 .feautres2-boxes .feautres2-box1 h2, .part2 .feautres2 .feautres2-boxes .feautres2-box2 h2, .part2 .containar .agency-help .agency-box h2 {
+.part2 .feautres2 .feautres2-boxes .feautres2-box1 h2, .part2 .feautres2 .feautres2-boxes .feautres2-box2 h2, .part2 .containar .agency-help .agency-box h2, .portfolio-section .container .inner .get-started h2 {
   font-size: 24px;
   text-transform: capitalize;
   margin: 20px 0 0;
@@ -1119,6 +1180,16 @@ body {
   .portfolio-box h2 a {
     font-size: 2rem !important;
   }
+  .container {
+    height: 940px !important;
+    flex-direction: column-reverse !important;
+  }
+  .container .women-absolute {
+    position: static !important;
+  }
+  .container .inner {
+    flex-direction: column !important;
+  }
 }
 @media (max-width: 450px) {
   .grid-content {
@@ -1159,4 +1230,15 @@ body {
 
 .girl-abslt img:hover {
   transform: scale(1.1);
+}
+
+.titles h2:hover {
+  opacity: 0.7;
+}
+.titles p:hover {
+  color: red !important;
+}
+
+.grid-title p:hover {
+  color: red !important;
 }

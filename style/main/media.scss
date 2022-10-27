@@ -125,6 +125,16 @@
             }
         }
     }
+    .container{
+        height: 940px !important;
+        flex-direction: column-reverse !important;
+        .women-absolute{
+            position: static !important;
+        }
+        .inner{
+            flex-direction: column !important;
+        }
+    }
 }
 @media(max-width:450px){
     .grid-content{

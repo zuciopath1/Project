@@ -77,7 +77,7 @@ body{
         .home-button1{
             @include button(154px,48px,white,#EF6D58,5px,none);
             margin-right: 25px;
-            text-transform: uppercase
+            text-transform: uppercase;
         }
         .home-button2{
             @include button(154px,48px,white,none,none,none);
@@ -671,6 +671,66 @@ body{
         @include flex-content(flex,center,center);
         button{
             @include button(170px,48px,white,none,5px,solid);
+            margin-bottom: 150px
+        }
+    }
+    .container{
+        @extend %container;
+        height: 336px;
+        background-color: #FDF0E9;
+        position: relative;
+        display: flex;
+        align-items: center;
+        .star-absolute{
+            position: absolute;
+            top: -75px;
+            left: 30px;
+        }
+        .women-absolute{
+            position: absolute;
+            right: 30px;
+            top: -60px;
+            width: 239px;
+            img{
+                width: 100%;
+            }
+        }
+        .inner{
+            display: flex;
+            align-items: center;
+            .get-started{
+                margin-left: 45px;
+                h3{
+                    a{
+                        @extend %h3;
+                    }
+                }
+                h2{
+                    @extend %h22;
+                    max-width: 226px;
+                }
+                button{
+                    @include button(154px,48px,white,#EF6D58,5px,none);
+                    margin-right: 25px;
+                    text-transform: uppercase;
+                }
+            }
+            .block{
+                max-width: 430px;
+                img{
+                    width: 100%;  
+                }
+            }
+        }
+    }
+    .team{
+        margin: 30px 0 0;
+        h3{
+            @extend %h3;
+        }
+        h2{
+            @include title(510px,white);
+            margin-bottom: 20px;
         }
     }
 }
