@@ -1,5 +1,6 @@
 body{
     margin: 0 auto;
+    overflow-x: hidden;
 }
 .home-section{
     @include mx-width(1280px,100%,);
@@ -34,14 +35,96 @@ body{
         button{
             @include button(170px,48px,white,none,5px,revert);
         }
+    } 
+    // 
+      .burger{
+        .hamburger {
+            padding: $h-padding;
+            cursor: pointer;
+            display: inline-block;
+            overflow: hidden;
+            background-color: $h-background-color;
+          
+            &__container {
+              width: $h-width;
+              height: $h-height;
+              position: relative;
+            }
+            &.is-active &__inner {
+              display: none;
+            }
+          
+            &__inner {
+              @include line-props();
+              top: 50%;
+              transform: translate($h-initial-opposition, -50%);
+              opacity: 1;
+          
+          
+              &::before,
+              &::after {
+                @include line-props();
+          
+                content: "";
+                opacity: 1;
+                transform: translate(-#{$h-initial-opposition}, 0);
+              }
+          
+              &::before {
+                top: -#{$h-vertical-gap};
+              }
+          
+              &::after {
+                top: $h-vertical-gap;
+              }
+            }      
+            &.is-active &__hidden {
+              opacity: 1;
+              transform: rotate(45deg);
+            }
+          
+            &.is-active &__hidden::before {
+              transform: translate(0, #{$h-vertical-gap}) rotate(90deg);
+              transform-origin: center;
+            }
+          
+            &.is-active &__hidden::after {
+              transform-origin: center;
+              transform: translate(0, -#{$h-vertical-gap}) rotate(0);
+            }
+          
+            &__hidden {
+              opacity: 0;
+              @include line-props();
+              
+              background-color: $h-hover-line-color;
+              top: 50%;
+              transform: translate(#{$h-hide-distance}, -50%);
+              
+          
+              &::before,
+              &::after {
+                @include line-props();
+                background-color: $h-hover-line-color;
+          
+                content: "";
+                transform: translate(#{$h-hide-distance * 2}, 0);
+              }
+          
+              &::before {
+                top: -#{$h-vertical-gap};
+              }
+          
+              &::after {
+                top: $h-vertical-gap;
+              }
+            }
+          
+          }
+      }
+    // 
     }
-    .burger{
-        img{
-            display: none;
-        }
     }
-}
-}
     .home-cont{
         display: flex;
         justify-content: space-around;
@@ -723,14 +806,227 @@ body{
             }
         }
     }
-    .team{
+    .events{
+        @include direction-align(column,center);
         margin: 30px 0 0;
         h3{
             @extend %h3;
         }
         h2{
-            @include title(510px,white);
+            @include title(386px,white);
             margin-bottom: 20px;
+            text-align: center;
         }
     }
+    .parent{
+        @extend %container;
+        display: flex;
+        justify-content: space-between;
+    .date-cont{
+        @include container(370px,100%,block);
+        height: 448px;
+        margin: 65px 0 0 ;
+        padding: 25px;
+        border: solid #3A3C56;
+        .date-time{
+            @include container(370px,100%,block);
+            border-bottom: #707070 solid;
+            height: 140px;
+            .month-cont{
+                @include display(flex,center);
+                height: 65px;
+                .digit{
+                    p{
+                        @include hh(white,76px,uppercase);
+                    }
+                }
+                .month{
+                    h2{
+                        @include hh(white,30px,capitalize);
+                        width: 130px;
+                        margin-left: 15px;
+                    }
+                }
+            }
+            .time{
+                display: flex;
+                margin: 20px 0 0;
+                p{
+                    @include hh(white,16px,none);
+                    margin-left: 10px;
+                }
+            }
+        }
+        .date-title{
+            h2{
+                margin: 30px 0 0;
+                a{
+                    margin: 30px 0 0;
+                    @include hh(white,30px,capitalize);
+                }
+            }
+            p{
+                margin: 20px 0 0;
+                a{
+                   opacity: 0.7;
+                   color: white;
+                   max-width: 290px;
+                   line-height: 25px;
+                   margin: 20px 0 0;
+                }
+            }
+            button{
+                @include button(88px,48px,white,none,none,none);
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+.btton{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0;
+    button{
+        @include button(170px,48px,white,none,5px,solid #3A3C56);
+        text-transform: uppercase;
+    }
+}
+}
+.home-section{
+    overflow: hidden;
+    .events{
+        @include direction-align(column,baseline);
+        max-width: 1170px;
+        margin: 0 auto;
+        h3{
+            @extend %h3;
+            margin: 50px 0 0;
+        }
+        h2{
+            @include title(500px,white);
+            margin-bottom: 50px;
+        }
+    }
+    // 
+    .center {
+        @include flex-content(flex,center,center);
+        flex-direction: column;
+        height: 100%;
+        max-width: 1170px;
+        margin: 0 auto;
+      }
+      
+      .wrapper {
+        display: flex;
+        grid-gap: 1em;
+        overflow: hidden;
+        width: 75em;
+        max-width: 1170px;
+        
+        & > .innerr {
+          display: flex;
+          grid-gap: 2em;
+          transition: all 1s ease-in-out;
+        }
+      }     
+      .card {
+        @include flex-content(flex,flex-end,static);
+        flex-direction: column;
+        border: solid #3A3C56;
+        width: 270px;
+        & > img {
+          display: block;
+          width: 100%;
+          height: 70%;
+          cursor: pointer;
+        }
+      
+        & > .content {
+          padding: 1em;
+          & > h1,
+          & > h3 {
+            margin: 0.35em 0;
+          }
+      
+          & > h1 {
+            a{
+                color: #fff;
+                font-size: 1.25rem;
+                line-height: 1;
+                text-transform: capitalize;
+            }
+          }
+      
+          & > h3 {
+            color: #ccc;
+            font-size: 0.9rem;
+            font-weight: 300;
+            text-transform: capitalize;
+          }
+        }
+      }
+      
+      .map {
+        margin-top: 1em;
+        & > button {
+          all: unset;
+          background: lighten($cardBlue, 10);
+          cursor: pointer;
+          margin: 0 0.125em;
+          position: relative;
+          user-select: none;
+          @include circle(1em);
+      
+          &.active {
+            &:after {
+              background: $bgBlue;
+              content: "";
+              left: 50%;
+              position: absolute;
+              transform: translate(-50%, -50%);
+              top: 50%;
+              @include circle(0.5em);
+            }
+          }
+        }
+      }
+      .founder-main-parent{
+        @include flex-content(flex,space-between,center);
+        max-width: 1170px;
+        margin: 0 auto;
+        .founder{
+            max-width: 570px;
+            margin: 80px 20px 0 0;
+            img{
+                width: 100%;
+            }
+        }
+        .founder-words{
+            margin: 80px 0 0;
+            h3{
+                a{
+                    @extend %h3;
+                }
+            }
+            h2{
+                max-width: 433px;
+                margin: 30px 0 30px 0;
+                a{
+                    @include hh(white,40px,initial);
+                }
+            }
+            h4{
+                a{
+                   @include hh(white,20px,capitalize); 
+                }
+            }
+            h5{
+                margin: 20px 0 0;
+                a{
+                   @include hh(white,14px,capitalize);
+                   opacity: 0.7; 
+                }
+            }
+        }
+      }
 }

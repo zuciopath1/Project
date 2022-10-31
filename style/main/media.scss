@@ -108,10 +108,53 @@
     .grid-content{
         height: 567px !important;
 }
+.founder-words{
+    h2{
+        a{
+            font-size: 32px !important;
+        }
+    }
+}
+.digit{
+    p{
+        font-size: 60px !important;
+    }
+}
+.month{
+    h2{
+        font-size: 25px !important;
+    }
+}
 }
 @media(max-width:700px){
+    .founder-parent-cont{
+        flex-wrap: wrap;
+        justify-content: center !important;
+        h2{
+            a{
+                font-size: 40px !important;
+            }
+        }
+    }
     .grid-content{
         height: 660px !important;
+    }
+    .parent{
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        .date-cont{
+            max-width: 370px !important;
+        }
+        .digit{
+            p{
+                font-size: 76px !important;
+            }
+        }
+        .month{
+            h2{
+                font-size: 30px !important;
+            }
+        }
     }
 }
 @media(max-width:550px){
@@ -139,5 +182,10 @@
 @media(max-width:450px){
     .grid-content{
         height: 460px !important;
+    }
+}
+@media(max-width:740px){
+    .date-cont{
+        max-width: 226px !important;
     }
 }
