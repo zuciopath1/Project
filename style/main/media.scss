@@ -136,6 +136,9 @@
             }
         }
     }
+    .founder-main-parent{
+        flex-wrap: wrap;
+    }
     .grid-content{
         height: 660px !important;
     }
@@ -187,5 +190,11 @@
 @media(max-width:740px){
     .date-cont{
         max-width: 226px !important;
+    }
+}
+@media(max-width:730px){
+    .allfather{
+        flex-wrap: wrap;
+        justify-content: center !important;
     }
 }

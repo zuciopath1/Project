@@ -62,7 +62,7 @@ input {
   line-height: 20px;
 }
 
-.home-section .founder-main-parent .founder-words h3 a, .home-section .events h3, .portfolio-section .events h3, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .portfolio-box .portfolio, .part2 .containar .service-title .service, .part2 .service-box h3, .part2 .feautres2 .feautres2-title h3, .part2 .feautres .feautres-title h3, .part2 .video-reel .video-title h3, .part2 .readme-title .titles h3, .part2 .gridd .grid-title h3, .home-cont .guide-cont h3 {
+.pricing-section .allfather .consult-cont2 h3 a, .pricing-section .allfather .consult-cont h3 a, .pricing-section .pricing-title h3 a, .testimonials-section .center-title h3 a, .home-section .founder-main-parent .founder-words h3 a, .home-section .events h3, .portfolio-section .events h3, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .portfolio-box .portfolio, .part2 .containar .service-title .service, .part2 .service-box h3, .part2 .feautres2 .feautres2-title h3, .part2 .feautres .feautres-title h3, .part2 .video-reel .video-title h3, .part2 .readme-title .titles h3, .part2 .gridd .grid-title h3, .home-cont .guide-cont h3 {
   font-size: 1rem;
   color: #EF6D58;
   text-transform: uppercase;
@@ -1132,7 +1132,7 @@ body {
 }
 .home-section .wrapper > .innerr {
   display: flex;
-  grid-gap: 2em;
+  grid-gap: 1em;
   transition: all 1s ease-in-out;
 }
 .home-section .card {
@@ -1141,7 +1141,7 @@ body {
   align-items: static;
   flex-direction: column;
   border: solid #3A3C56;
-  width: 270px;
+  width: 278px;
 }
 .home-section .card > img {
   display: block;
@@ -1233,6 +1233,404 @@ body {
   opacity: 0.7;
 }
 
+.testimonials-section {
+  max-width: 1280px;
+  width: 100%;
+  background-color: #FDF0E9;
+  padding: 20px;
+}
+.testimonials-section .center-title {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  margin: 30px 0 0;
+}
+.testimonials-section .center-title h2 {
+  max-width: 376px;
+  text-align: center;
+  margin: 25px;
+}
+.testimonials-section .center-title h2 a {
+  font-size: 4rem;
+  text-transform: capitalize;
+  max-width: 344px;
+  color: black;
+  margin: 20px 0 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.testimonials-section .allfather {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1240px;
+  flex-wrap: wrap;
+}
+.testimonials-section .allfather .star-rating-parent {
+  border: solid #F3D1BF;
+  display: flex;
+  width: 585px;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 {
+  padding: 30px;
+  background-color: white;
+  width: 100%;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .star-rating {
+  font-size: 0;
+  white-space: nowrap;
+  display: flex;
+  width: 110px;
+  height: 22px;
+  overflow: hidden;
+  position: relative;
+  background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=");
+  background-size: contain;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .star-rating i {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  z-index: 1;
+  background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=");
+  background-size: contain;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .star-rating input {
+  appearance: none;
+  opacity: 0;
+  width: 20%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .star-rating input:hover + i, .testimonials-section .allfather .star-rating-parent .rating-inner1 .star-rating input:checked + i {
+  opacity: 1;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .star-rating i ~ i {
+  width: 40%;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .star-rating i ~ i ~ i {
+  width: 60%;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .star-rating i ~ i ~ i ~ i {
+  width: 80%;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .star-rating i ~ i ~ i ~ i ~ i {
+  width: 100%;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 h3 {
+  margin: 20px 0 0;
+  max-width: 470px;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 h3 a {
+  line-height: 20px;
+  opacity: 0.7;
+  margin-top: 25px;
+  color: #391400;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .oval-cont {
+  display: flex;
+  align-items: center;
+  margin: 30px 0 0;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .oval-cont .oval-box {
+  max-width: 80px;
+  border-radius: 50%;
+  height: 80px;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .oval-cont .oval-box a img {
+  width: 100%;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .oval-cont .author {
+  margin-left: 20px;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .oval-cont .author h2 a {
+  color: #391400;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .oval-cont .author h4 {
+  margin: 10px 0 0;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .oval-cont .author h4 a {
+  color: #391400;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner1 .choice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px;
+  display: block;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner {
+  padding: 30px;
+  max-width: 586px;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .star-rating {
+  font-size: 0;
+  white-space: nowrap;
+  display: inline-block;
+  width: 110px;
+  height: 22px;
+  overflow: hidden;
+  position: relative;
+  background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjREREREREIiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=");
+  background-size: contain;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .star-rating i {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 20%;
+  z-index: 1;
+  background: url("data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMjBweCIgaGVpZ2h0PSIyMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIwIDIwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cG9seWdvbiBmaWxsPSIjRkZERjg4IiBwb2ludHM9IjEwLDAgMTMuMDksNi41ODMgMjAsNy42MzkgMTUsMTIuNzY0IDE2LjE4LDIwIDEwLDE2LjU4MyAzLjgyLDIwIDUsMTIuNzY0IDAsNy42MzkgNi45MSw2LjU4MyAiLz48L3N2Zz4=");
+  background-size: contain;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .star-rating input {
+  appearance: none;
+  opacity: 0;
+  width: 20%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  position: relative;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .star-rating input:hover + i, .testimonials-section .allfather .star-rating-parent .rating-inner .star-rating input:checked + i {
+  opacity: 1;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .star-rating i ~ i {
+  width: 40%;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .star-rating i ~ i ~ i {
+  width: 60%;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .star-rating i ~ i ~ i ~ i {
+  width: 80%;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .star-rating i ~ i ~ i ~ i ~ i {
+  width: 100%;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner h3 {
+  margin: 20px 0 0;
+  max-width: 470px;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner h3 a {
+  line-height: 20px;
+  opacity: 0.7;
+  margin-top: 25px;
+  color: #391400;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .oval-cont {
+  display: flex;
+  align-items: center;
+  margin: 30px 0 0;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .oval-cont .oval-box {
+  max-width: 80px;
+  border-radius: 50%;
+  height: 80px;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .oval-cont .oval-box a img {
+  width: 100%;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .oval-cont .author {
+  margin-left: 20px;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .oval-cont .author h2 a {
+  color: #391400;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .oval-cont .author h4 {
+  margin: 10px 0 0;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .oval-cont .author h4 a {
+  color: #391400;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.testimonials-section .allfather .star-rating-parent .rating-inner .choice {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 20px;
+  display: block;
+}
+
+.pricing-section {
+  max-width: 1280px;
+  width: 100%;
+  background-color: #FDF0E9;
+  padding: 20px;
+}
+.pricing-section .pricing-title {
+  max-width: 315px;
+  margin: 40px 0 0 10px;
+}
+.pricing-section .pricing-title h2 a {
+  color: black;
+  font-size: 56px;
+  text-transform: capitalize;
+}
+.pricing-section .allfather {
+  display: flex;
+  margin: 60px 0 0;
+  align-items: flex-end;
+}
+.pricing-section .allfather .consult-cont {
+  max-width: 391px;
+  border: solid #F3D1BF;
+  padding: 40px;
+  height: 470px;
+}
+.pricing-section .allfather .consult-cont h4 {
+  margin: 25px 0 0;
+}
+.pricing-section .allfather .consult-cont h4 a {
+  color: black;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.pricing-section .allfather .consult-cont p {
+  margin: 25px 0 0;
+}
+.pricing-section .allfather .consult-cont p a {
+  color: black;
+  font-size: 1rem;
+  text-transform: none;
+  opacity: 0.7;
+  line-height: 20px;
+}
+.pricing-section .allfather .consult-cont .flex-plus {
+  margin: 30px 0 0;
+  display: flex;
+}
+.pricing-section .allfather .consult-cont .flex-plus h5 {
+  margin-left: 15px;
+}
+.pricing-section .allfather .consult-cont .flex-plus h5 a {
+  color: black;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.pricing-section .allfather .consult-cont .flex-minus {
+  margin: 30px 0 0;
+  display: flex;
+}
+.pricing-section .allfather .consult-cont .flex-minus h5 {
+  margin-left: 15px;
+}
+.pricing-section .allfather .consult-cont .flex-minus h5 a {
+  color: black;
+  font-size: 1rem;
+  text-transform: capitalize;
+  opacity: 0.5;
+}
+.pricing-section .allfather .consult-cont button {
+  width: 138px;
+  height: 48px;
+  color: #391400;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0 0;
+  text-transform: uppercase;
+}
+.pricing-section .allfather .consult-cont2 {
+  max-width: 391px;
+  border: solid #F3D1BF;
+  padding: 40px;
+  height: 520px;
+  background-color: #FFFFFF;
+}
+.pricing-section .allfather .consult-cont2 .popular-btn {
+  width: 94px;
+  height: 38px;
+  color: white;
+  background: #EF6D58;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0 0;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.pricing-section .allfather .consult-cont2 h4 {
+  margin: 25px 0 0;
+}
+.pricing-section .allfather .consult-cont2 h4 a {
+  color: black;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.pricing-section .allfather .consult-cont2 p {
+  margin: 25px 0 0;
+}
+.pricing-section .allfather .consult-cont2 p a {
+  color: black;
+  font-size: 1rem;
+  text-transform: none;
+  opacity: 0.7;
+  line-height: 20px;
+}
+.pricing-section .allfather .consult-cont2 .flex-plus {
+  display: flex;
+  margin: 20px 0 0;
+}
+.pricing-section .allfather .consult-cont2 .flex-plus h5 {
+  margin-left: 15px;
+}
+.pricing-section .allfather .consult-cont2 .flex-plus h5 a {
+  color: black;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.pricing-section .allfather .consult-cont2 .flex-minus {
+  margin: 30px 0 0;
+  display: flex;
+}
+.pricing-section .allfather .consult-cont2 .flex-minus h5 {
+  margin-left: 15px;
+}
+.pricing-section .allfather .consult-cont2 .flex-minus .nopacity {
+  color: black;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+.pricing-section .allfather .consult-cont2 .flex-minus .opacity {
+  color: black;
+  font-size: 1rem;
+  text-transform: capitalize;
+  opacity: 0.5;
+}
+.pricing-section .allfather .consult-cont2 button {
+  width: 154px;
+  height: 48px;
+  color: white;
+  background: #EF6D58;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin: 20px 0 0;
+  margin-right: 25px;
+  text-transform: uppercase;
+}
+
 .dropbtn {
   background-color: #FFFFFF;
   color: black;
@@ -1301,7 +1699,7 @@ body {
   line-height: 20px;
 }
 
-.home-cont .guide-cont h3, .part2 .gridd .grid-title h3, .part2 .readme-title .titles h3, .part2 .video-reel .video-title h3, .part2 .feautres .feautres-title h3, .part2 .feautres2 .feautres2-title h3, .part2 .service-box h3, .part2 .containar .service-title .service, .portfolio-section .portfolio-box .portfolio, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .events h3, .home-section .events h3, .home-section .founder-main-parent .founder-words h3 a {
+.home-cont .guide-cont h3, .part2 .gridd .grid-title h3, .part2 .readme-title .titles h3, .part2 .video-reel .video-title h3, .part2 .feautres .feautres-title h3, .part2 .feautres2 .feautres2-title h3, .part2 .service-box h3, .part2 .containar .service-title .service, .portfolio-section .portfolio-box .portfolio, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .events h3, .home-section .events h3, .home-section .founder-main-parent .founder-words h3 a, .testimonials-section .center-title h3 a, .pricing-section .pricing-title h3 a, .pricing-section .allfather .consult-cont h3 a, .pricing-section .allfather .consult-cont2 h3 a {
   font-size: 1rem;
   color: #EF6D58;
   text-transform: uppercase;
@@ -1512,6 +1910,9 @@ body {
   .founder-parent-cont h2 a {
     font-size: 40px !important;
   }
+  .founder-main-parent {
+    flex-wrap: wrap;
+  }
   .grid-content {
     height: 660px !important;
   }
@@ -1555,6 +1956,12 @@ body {
 @media (max-width: 740px) {
   .date-cont {
     max-width: 226px !important;
+  }
+}
+@media (max-width: 730px) {
+  .allfather {
+    flex-wrap: wrap;
+    justify-content: center !important;
   }
 }
 @keyframes animation {
@@ -1619,4 +2026,9 @@ body {
 .hamburger:hover .hamburger__hidden::before, .hamburger:hover .hamburger__hidden::after {
   opacity: 1 !important;
   transform: translate(0, 0) !important;
+}
+
+.star-rating-parent h3 a:hover {
+  color: #dc5005 !important;
+  font-weight: bold;
 }

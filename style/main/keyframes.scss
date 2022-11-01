@@ -74,4 +74,12 @@
     transform: translate(0, 0) !important;
   }
   }
-// 
+//
+.star-rating-parent{
+    h3{
+        a:hover{
+            color: #dc5005 !important;
+            font-weight: bold;
+        }
+    }
+} 
