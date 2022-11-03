@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import './moduls/variable.css';
 *, *:before, *:after {
   box-sizing: border-box;
@@ -62,7 +63,7 @@ input {
   line-height: 20px;
 }
 
-.pricing-section .allfather .consult-cont2 h3 a, .pricing-section .allfather .consult-cont h3 a, .pricing-section .pricing-title h3 a, .testimonials-section .center-title h3 a, .home-section .founder-main-parent .founder-words h3 a, .home-section .events h3, .portfolio-section .events h3, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .portfolio-box .portfolio, .part2 .containar .service-title .service, .part2 .service-box h3, .part2 .feautres2 .feautres2-title h3, .part2 .feautres .feautres-title h3, .part2 .video-reel .video-title h3, .part2 .readme-title .titles h3, .part2 .gridd .grid-title h3, .home-cont .guide-cont h3 {
+.faq-section .allfather .faq-box h3 a, .pricing-section .allfather .consult-cont2 h3 a, .pricing-section .allfather .consult-cont h3 a, .pricing-section .pricing-title h3 a, .testimonials-section .center-title h3 a, .home-section .founder-main-parent .founder-words h3 a, .home-section .events h3, .portfolio-section .events h3, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .portfolio-box .portfolio, .part2 .containar .service-title .service, .part2 .service-box h3, .part2 .feautres2 .feautres2-title h3, .part2 .feautres .feautres-title h3, .part2 .video-reel .video-title h3, .part2 .readme-title .titles h3, .part2 .gridd .grid-title h3, .home-cont .guide-cont h3 {
   font-size: 1rem;
   color: #EF6D58;
   text-transform: uppercase;
@@ -1631,6 +1632,93 @@ body {
   text-transform: uppercase;
 }
 
+.faq-section {
+  max-width: 1280px;
+  width: 100%;
+  background-color: #FDF0E9;
+  padding: 20px;
+}
+.faq-section .allfather {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+}
+.faq-section .allfather .faq-box h2 {
+  width: 320px;
+  margin: 20px 0 0;
+}
+.faq-section .allfather .faq-box h2 a {
+  color: black;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.faq-section .allfather .faq-box p {
+  margin: 20px 0 0;
+  max-width: 470px;
+}
+.faq-section .allfather .faq-box p a {
+  color: black;
+  font-size: 1rem;
+  text-transform: none;
+  opacity: 0.7;
+  line-height: 1.2;
+}
+.faq-section .allfather .faq-box h5 {
+  margin: 20px 0 0;
+}
+.faq-section .allfather .faq-box h5 a {
+  color: black;
+  font-size: 16;
+  text-transform: capitalize;
+}
+.faq-section .allfather .toggle-parent .container-toggle {
+  max-width: 370px;
+  max-height: 245px;
+  padding: 10px;
+  border: solid #F3D1BF;
+  border-radius: 5px;
+}
+.faq-section .allfather .toggle-parent .container-toggle > ul {
+  list-style: none;
+  padding: 0;
+}
+.faq-section .allfather .toggle-parent .dropdownn [data-toggle=dropdownn] {
+  position: relative;
+  display: block;
+  color: white;
+  padding: 10px;
+}
+.faq-section .allfather .toggle-parent .dropdownn [data-toggle=dropdownn] .black {
+  color: black;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+.faq-section .allfather .toggle-parent .dropdownn .icon-arrow {
+  position: absolute;
+  display: block;
+  font-size: 0.7em;
+  color: black;
+  top: 14px;
+  right: 10px;
+}
+.faq-section .allfather .toggle-parent .dropdownn .icon-arrow:before {
+  content: "▼";
+}
+.faq-section .allfather .toggle-parent .dropdownn .dropdownn-menu {
+  max-height: 0;
+  overflow: hidden;
+}
+.faq-section .allfather .toggle-parent .dropdownn .dropdownn-menu p {
+  color: rgb(220, 80, 5);
+}
+.faq-section .allfather .toggle-parent .dropdownn .show {
+  display: block;
+  max-height: 9999px;
+}
+.faq-section .allfather .toggle-parent .dropdownn .hide {
+  max-height: 0;
+}
+
 .dropbtn {
   background-color: #FFFFFF;
   color: black;
@@ -1699,7 +1787,7 @@ body {
   line-height: 20px;
 }
 
-.home-cont .guide-cont h3, .part2 .gridd .grid-title h3, .part2 .readme-title .titles h3, .part2 .video-reel .video-title h3, .part2 .feautres .feautres-title h3, .part2 .feautres2 .feautres2-title h3, .part2 .service-box h3, .part2 .containar .service-title .service, .portfolio-section .portfolio-box .portfolio, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .events h3, .home-section .events h3, .home-section .founder-main-parent .founder-words h3 a, .testimonials-section .center-title h3 a, .pricing-section .pricing-title h3 a, .pricing-section .allfather .consult-cont h3 a, .pricing-section .allfather .consult-cont2 h3 a {
+.home-cont .guide-cont h3, .part2 .gridd .grid-title h3, .part2 .readme-title .titles h3, .part2 .video-reel .video-title h3, .part2 .feautres .feautres-title h3, .part2 .feautres2 .feautres2-title h3, .part2 .service-box h3, .part2 .containar .service-title .service, .portfolio-section .portfolio-box .portfolio, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .events h3, .home-section .events h3, .home-section .founder-main-parent .founder-words h3 a, .testimonials-section .center-title h3 a, .pricing-section .pricing-title h3 a, .pricing-section .allfather .consult-cont h3 a, .pricing-section .allfather .consult-cont2 h3 a, .faq-section .allfather .faq-box h3 a {
   font-size: 1rem;
   color: #EF6D58;
   text-transform: uppercase;
@@ -1809,6 +1897,9 @@ body {
   }
 }
 @media (max-width: 700px) {
+  .toggle-parent {
+    margin: 30px 0 0;
+  }
   .feautres2 {
     flex-wrap: wrap;
   }
