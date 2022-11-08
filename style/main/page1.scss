@@ -1536,4 +1536,42 @@ body{
                 }
             }
         }
-    } 
+    }
+    section{
+        @include section(#FDF0E9);
+        .blog-title{
+            h3{
+                @extend %h3;
+            }
+            h2{
+                @include hh(black,57px,capitalize);
+                max-width: 270px;
+            }
+        }
+        .allfatherr{
+            @include container(1170px,100%,flex);
+            justify-content: space-between;
+            margin: 30px 0 0;
+        }
+        .container-{
+            @include container(370px,100%,flex);
+            flex-direction: column;
+            gap: 15px;
+            .blog-img{
+                img{
+                    width: 100%;
+                }
+            }
+            h5{
+                @include hh(black,20px,capitalize);
+            }
+            h4{
+                @include hh(black,24px,capitalize);
+                max-width: 335px;
+            }
+            p{
+                @include hh(black,1rem,capitalize);
+                opacity: 0.7;
+            }
+        }
+    }

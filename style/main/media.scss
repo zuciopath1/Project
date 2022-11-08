@@ -1,6 +1,15 @@
 @import'./../moduls/clases.scss';
 
 @media(max-width:700px){
+    .blog-title{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    .allfatherr{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
     .head-main-cont{
         justify-content: space-between !important;
     }  .navbar{

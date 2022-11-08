@@ -63,7 +63,7 @@ input {
   line-height: 20px;
 }
 
-.faq-section .allfather .faq-box h3 a, .pricing-section .allfather .consult-cont2 h3 a, .pricing-section .allfather .consult-cont h3 a, .pricing-section .pricing-title h3 a, .testimonials-section .center-title h3 a, .home-section .founder-main-parent .founder-words h3 a, .home-section .events h3, .portfolio-section .events h3, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .portfolio-box .portfolio, .part2 .containar .service-title .service, .part2 .service-box h3, .part2 .feautres2 .feautres2-title h3, .part2 .feautres .feautres-title h3, .part2 .video-reel .video-title h3, .part2 .readme-title .titles h3, .part2 .gridd .grid-title h3, .home-cont .guide-cont h3 {
+section .blog-title h3, .faq-section .allfather .faq-box h3 a, .pricing-section .allfather .consult-cont2 h3 a, .pricing-section .allfather .consult-cont h3 a, .pricing-section .pricing-title h3 a, .testimonials-section .center-title h3 a, .home-section .founder-main-parent .founder-words h3 a, .home-section .events h3, .portfolio-section .events h3, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .portfolio-box .portfolio, .part2 .containar .service-title .service, .part2 .service-box h3, .part2 .feautres2 .feautres2-title h3, .part2 .feautres .feautres-title h3, .part2 .video-reel .video-title h3, .part2 .readme-title .titles h3, .part2 .gridd .grid-title h3, .home-cont .guide-cont h3 {
   font-size: 1rem;
   color: #EF6D58;
   text-transform: uppercase;
@@ -1767,6 +1767,53 @@ body {
   gap: 20px;
 }
 
+section {
+  max-width: 1280px;
+  width: 100%;
+  background-color: #FDF0E9;
+  padding: 20px;
+}
+section .blog-title h2 {
+  color: black;
+  font-size: 57px;
+  text-transform: capitalize;
+  max-width: 270px;
+}
+section .allfatherr {
+  max-width: 1170px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 0;
+}
+section .container- {
+  max-width: 370px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+section .container- .blog-img img {
+  width: 100%;
+}
+section .container- h5 {
+  color: black;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+section .container- h4 {
+  color: black;
+  font-size: 24px;
+  text-transform: capitalize;
+  max-width: 335px;
+}
+section .container- p {
+  color: black;
+  font-size: 1rem;
+  text-transform: capitalize;
+  opacity: 0.7;
+}
+
 .dropbtn {
   background-color: #FFFFFF;
   color: black;
@@ -1835,7 +1882,7 @@ body {
   line-height: 20px;
 }
 
-.home-cont .guide-cont h3, .part2 .gridd .grid-title h3, .part2 .readme-title .titles h3, .part2 .video-reel .video-title h3, .part2 .feautres .feautres-title h3, .part2 .feautres2 .feautres2-title h3, .part2 .service-box h3, .part2 .containar .service-title .service, .portfolio-section .portfolio-box .portfolio, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .events h3, .home-section .events h3, .home-section .founder-main-parent .founder-words h3 a, .testimonials-section .center-title h3 a, .pricing-section .pricing-title h3 a, .pricing-section .allfather .consult-cont h3 a, .pricing-section .allfather .consult-cont2 h3 a, .faq-section .allfather .faq-box h3 a {
+.home-cont .guide-cont h3, .part2 .gridd .grid-title h3, .part2 .readme-title .titles h3, .part2 .video-reel .video-title h3, .part2 .feautres .feautres-title h3, .part2 .feautres2 .feautres2-title h3, .part2 .service-box h3, .part2 .containar .service-title .service, .portfolio-section .portfolio-box .portfolio, .portfolio-section .container .inner .get-started h3 a, .portfolio-section .events h3, .home-section .events h3, .home-section .founder-main-parent .founder-words h3 a, .testimonials-section .center-title h3 a, .pricing-section .pricing-title h3 a, .pricing-section .allfather .consult-cont h3 a, .pricing-section .allfather .consult-cont2 h3 a, .faq-section .allfather .faq-box h3 a, section .blog-title h3 {
   font-size: 1rem;
   color: #EF6D58;
   text-transform: uppercase;
@@ -1926,6 +1973,15 @@ body {
 }
 
 @media (max-width: 700px) {
+  .blog-title {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .allfatherr {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
   .head-main-cont {
     justify-content: space-between !important;
   }
