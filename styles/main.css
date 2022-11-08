@@ -1719,6 +1719,54 @@ body {
   max-height: 0;
 }
 
+.awards-section {
+  max-width: 1280px;
+  width: 100%;
+  background-color: #FDF0E9;
+  padding: 20px;
+}
+.awards-section .center-title {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 40px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
+}
+.awards-section .allfather .awards-box1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  border-top: solid #F3D1BF;
+  border-bottom: solid #F3D1BF;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.awards-section .allfather .awards-box1 .sofa-t {
+  align-items: center;
+  display: flex;
+  max-width: 120px;
+}
+.awards-section .allfather .awards-box1 .sofa-t img {
+  width: 100%;
+  border-radius: 15px;
+}
+.awards-section .allfather .awards-box1 .sofa-t p {
+  margin-left: 20px;
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.awards-section .allfather .awards-box1 .awards-date span {
+  opacity: 0.7;
+}
+.awards-section .allfather .awards-box1 .awards-logo {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
 .dropbtn {
   background-color: #FFFFFF;
   color: black;
@@ -1994,6 +2042,19 @@ body {
   }
 }
 @media (max-width: 700px) {
+  .awards-box1 {
+    flex-wrap: wrap;
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .awards-box1 .sofa-t {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+  .awards-box1 .awards-logo {
+    flex-direction: column !important;
+    gap: 2px !important;
+  }
   .founder-parent-cont {
     flex-wrap: wrap;
     justify-content: center !important;

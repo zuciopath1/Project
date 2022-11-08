@@ -1494,3 +1494,46 @@ body{
         }
         }
     }
+    .awards-section{
+        max-width: 1280px;
+        width: 100%;
+        background-color: #FDF0E9;
+        padding: 20px;
+        .center-title{
+            display: flex;
+            justify-content: center;
+            @include hh(black,40px,capitalize);
+            margin-bottom: 50px;
+        }
+        .allfather{
+            .awards-box1{
+                @include flex-content(flex,space-between,center);
+                max-width: 1170px;
+                border-top: solid #F3D1BF;
+                border-bottom: solid #F3D1BF;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                .sofa-t{
+                    @include display(flex,center);
+                    max-width: 120px;
+                    img{
+                        width: 100%;
+                        border-radius: 15px;
+                    }
+                    p{
+                        margin-left: 20px;
+                        @include hh(black,20px,uppercase);
+                    }
+                }
+                .awards-date{
+                    span{
+                        opacity: 0.7;
+                    }
+                }
+                .awards-logo{
+                    @include display(flex,center);
+                    gap: 20px;
+                }
+            }
+        }
+    } 
